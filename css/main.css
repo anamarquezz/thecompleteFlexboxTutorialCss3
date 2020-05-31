@@ -7,3 +7,14 @@
 .container div{
     float: right;
 }
+
+.justifycontent{
+    display: flex;  
+    flex-direction: row-reverse;
+    justify-content: space-between ; /* flex-start, flex-end, center, space-around, space-between*/
+  
+}
+
+.justifycontent div{
+    float: right;
+}
