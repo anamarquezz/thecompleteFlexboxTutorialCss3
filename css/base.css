@@ -1,15 +1,26 @@
 
+* {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+body{
+    padding: 20px;
+}
 html{
     background: -webkit-linear-gradient(100deg,#731b83,#e250a5);
     background:linea-gradient(100deg,#731b83,#e250a5);
     min-height: 100vh;
     font-size: 18px;
+    font-family:arial;
 }
 
 code{
     margin:1px 5px;
     padding: 2px 5px 1px 5px;
-    font-family: monospace;
+    font-family: sans-serif;
     border-spacing: 2px;
     border:1px dotted #fff;
 }
@@ -29,6 +40,9 @@ a:hover{
 h1{
     color: #fff;
 }
+h3{
+    color: rgb(236, 234, 234);
+}
 .outlined{
     width: 500px;
     height: 200px;
@@ -37,22 +51,26 @@ h1{
 }
 
 .container > * {
-    color:#fff;
-    background-color: rgba(255,255,255,0.15);
-    border:1px solid #fff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #fff;
     border-radius: 2px;
     padding: 20px;
     margin: 10px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
-}
-
-.container > div:hover{
-    background-color: rgba(255,255,255,0.25);
-}
-
+  }
+  
+  .container > div:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: row wrap;
+  }
 .full{
     -webkit-box-flex:0;
     -ms-flex:0 1 100%;
@@ -88,3 +106,23 @@ h1{
     -ms-flex: 0 1 calc(16.6666666%-20px);
     flex: 0 1 calc(16.6666666% -20px);
 }
+
+
+.container{
+    perspective: 500px;
+}
+
+.divclick{
+  
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: transform .3s;
+   
+}
+
+.divclick:hover {
+    transform: rotateX(15deg);
+}
+
+
+
