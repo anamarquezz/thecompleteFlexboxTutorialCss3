@@ -1,0 +1,14 @@
+-------------------------------------
+
+div*4>{$} -----> crea 4 divs con numeracion dentro
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>   
+--------------------------------------------
+
+Todos los elementos hijos dentro de flex ignoraran 
+los valores de float.
+
+--------------------------------------------
