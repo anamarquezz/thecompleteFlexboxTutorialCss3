@@ -8,19 +8,26 @@
     <style>
         .container{
             display: flex;
-            flex-flow: row;         
+            flex-direction: row;         
             border:1px solid #fff;         
-            width: 400px;
+            width: 800px;
         }
+/*
+flex-basis
+container has a) space left or b) is overfull
+look at a) flex-grow and  b)flex-shrink
+calculate portions each items will grow /shrink
+*/
+
 
         .container div{
-            float: right;
-            width: 200px;                     
+            float: right;          
+            flex-basis: 100px;   
+            flex-grow:1;            
             margin: 0;        
         }
 
-        .container div:nth-child(2){
-            flex-shrink: 2;
+        .container div:nth-child(2){          
         }        
        
     </style>
@@ -28,10 +35,10 @@
 
 <body>
     <div class="container">
-     <div>Item 1</div>
-     <div>Item 2</div>
-     <div>Item 3</div>
-     <div>Item 4</div>
+     <div> 1</div>
+     <div> 2</div>
+     <div> 3</div>
+     <div> 4</div>
    
     </div>   
 </body>
