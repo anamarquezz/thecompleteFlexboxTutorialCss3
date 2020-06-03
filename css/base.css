@@ -126,3 +126,34 @@ h3{
 
 
 
+
+.full {
+    width: 100%; /* IE */
+    flex: 0 1 100%;
+  }
+  
+  .half {
+    width: 49%; /* IE */
+    flex: 0 2 calc(50% - 20px);
+  }
+  
+  .third {
+    width: 32.2%; /* IE */
+    flex: 0 1 calc(33.333333% - 20px);
+  }
+  
+  .fourth {
+    width: 24%; /* IE */
+    flex: 0 1 calc(25% - 20px);
+  }
+  
+  .fifth {
+    width: 19.5%; /* IE */
+    flex: 0 1 calc(20% - 20px);
+  }
+  
+  .sixth {
+    width: 15.7%; /* IE */
+    flex: 0 1 calc(16.666666% - 20px);
+  }
+  

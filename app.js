@@ -18,3 +18,11 @@
   })
  }
 
+ 
+ var elements = document.getElementsByClassName("c3");
+ for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click',function(e){
+        window.location.href = 'FlexboxAwesomeness/' + e.currentTarget.classList[2] + '.html';
+  })
+ }
+

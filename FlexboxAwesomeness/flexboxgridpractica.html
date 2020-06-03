@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content"width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/base.css" />
+</head>
+<style>
+    .grid {
+        display: flex;
+    }
+
+    .gutters {
+        margin: -10px 0 25px -10px;
+    }
+
+    .gutters >.cell {
+        padding: 10px 0 0 10px;
+    }
+
+    .cell {
+        flex: 1;
+        /* 1 1 0%*/
+    }
+
+    .cell > div {
+        background-color: blueviolet;
+        height: 100%;
+        padding: 10px;
+    }
+
+
+    .larger {
+        flex-grow:3;
+    }
+</style>
+
+<body>
+    <div class="grid gutters">
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        </div>
+    </div>
+    <div class="grid gutters">
+        <div class="cell larger">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet</div>
+        </div>
+    </div>
+    <div class="grid gutters">
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        </div>
+        <div class="cell">
+            <div>Lorem ipsum dolor sit amet</div>
+        </div>
+    </div>
+</body>
+
+</html>
