@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content"width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="css/base.css" />
+    
+    <title></title>    
 </head>
 <style>
     .grid {
@@ -16,59 +16,81 @@
         margin: -10px 0 25px -10px;
     }
 
-    .gutters >.cell {
+    .gutters > div {
         padding: 10px 0 0 10px;
     }
 
-    .cell {
-        flex: 1;
-        /* 1 1 0%*/
-    }
-
-    .cell > div {
-        background-color: blueviolet;
-        height: 100%;
+    .grid div div{
+        background-color: rgba(95, 158, 160, 0.5);
         padding: 10px;
+        height: 100%;
     }
 
-
-    .larger {
-        flex-grow:3;
+    .half{
+        flex-basis: 50%;
     }
+    .third{
+        flex-basis: 33.33333%;
+    }
+
+    .fourth{
+        flex-basis: 25%;
+    }
+    .fifth{
+        flex-basis: 20%;
+    }
+
+    .sixth{
+        flex-basis:16.66666%;
+    }
+
 </style>
 
 <body>
     <div class="grid gutters">
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
-        </div>
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet</div>
-        </div>
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
-        </div>
+       <div class="half">
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora maxime officiis, 
+               doloribus accusamus architecto velit mollitia commodi cumque, repudiandae tempore, rem assumenda nisi. Iure eum cumque nemo eaque dolore?</div>
+       </div>
+       <div class="half">
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora maxime officiis, 
+            doloribus accusamus architecto velit mollitia commodi cumque, repudiandae tempore, rem assumenda nisi. Iure eum cumque nemo eaque dolore?</div>
+       </div>
     </div>
     <div class="grid gutters">
-        <div class="cell larger">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
-        </div>
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet</div>
-        </div>
+       <div class="third">
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis alias fugit voluptas cumque aliquam, consequatur eos temporibus nobis, quod qui, quidem id. Dicta ab perspiciatis optio placeat adipisci pariatur?</div>
+       </div>
+       <div class="third">
+           <div>Lorem ipsum dolor sit amet </div>
+       </div>
+       <div class="third">
+           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore quae, accusantium nesciunt velit voluptate dicta, error deleniti ea eius architecto optio quaerat enim molestias laboriosam explicabo modi facilis? Porro?</div>
+       </div>
     </div>
     <div class="grid gutters">
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
-        </div>
-        <div class="cell">
+       <div class="fourth">
+           <div>Lorem ipsum dolor sit amet</div>
+       </div>
+       <div class="half">
+           <div>Lorem ipsum dolor sit amet</div>
+       </div>
+       <div class="fourth">
+           <div>Lorem ipsum dolor sit amet</div>
+       </div>
+    </div>
+    <div class="grid gutters">
+        <div class="sixth">
             <div>Lorem ipsum dolor sit amet</div>
         </div>
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, debitis.</div>
+        <div class="sixth">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas</div>
         </div>
-        <div class="cell">
-            <div>Lorem ipsum dolor sit amet</div>
+        <div class="third">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facere exercitationem </div>
+        </div>
+        <div class="third">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quia odit doloremque </div>
         </div>
     </div>
 </body>
