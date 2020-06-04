@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        /*
+        Variable image size
+        Image left or right
+        Image Vertical Align
+        Nesting
+        Reponsive
+        Clearfix
+        */
+        .media {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .figure {
+            flex: 1 1 20%;
+            align-self: flex-start;
+            order: 0;
+
+        }
+
+        .media-body {
+            flex: 1 1 60%;
+        }
+
+        p {
+            margin: 0 10px 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="media">
+            <img src="img/squirrel.jpg" alt="" class="figure">
+            <div class="media-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum in pariatur libero consequatur,
+                    quia
+                    explicabo aliquid ducimus quae nam aperiam, soluta maxime exercitationem nemo earum assumenda
+                    facilis
+                    excepturi possimus!
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda dolor ullam doloribus
+                    tempore,
+                    et harum ea perferendis, voluptatum, fugiat ex quod architecto. Illo repellat debitis hic mollitia
+                    quod
+                    corporis!</p>
+                <div class="media">
+                    <img src="img/squirrel.jpg" alt="" class="figure">
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum in pariatur libero
+                            consequatur, quia explicabo aliquid
+                        </p>
+                        <p>Lorem, ipsum dolor sit amet consectetur luptatum, fugiat ex quod architecto. Illo repellat
+                            debitis
+                            hic mollitia quod corporis!</p>
+                        <div class="media">
+                            <img src="img/squirrel.jpg" alt="" class="figure">
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum in pariatur
+                                    libero
+                                    consequatur, quia explicabo alturi possimus!
+                                </p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda dolor ullam
+                                    doloribus tempore, !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis nobis magni expedita. Odit ab quo architecto explicabo, molestiae officia recusandae, ex error soluta aut quia aspernatur aliquam eos! Quod.</p>
+
+</body>
+
+</html>
